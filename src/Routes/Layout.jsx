@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 const Layout = () => {
     return (
         <div className='font-poppins'>
-            <div className='w-full md:w-[650px] bg-white min-h-screen mx-auto border border-[#e2126d]'>
+            <div className='w-full md:w-[650px] bg-white min-h-screen mx-auto border border-[#ffb500]'>
                 <Outlet />
             </div>
         </div>

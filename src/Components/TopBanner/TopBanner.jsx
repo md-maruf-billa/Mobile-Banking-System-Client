@@ -7,7 +7,7 @@ const TopBanner = () => {
     return (
 
 
-        <div className='flex justify-between items-center h-24 bg-[#e2126d] rounded-b-2xl shadow-xl px-8'>
+        <div className='flex justify-between items-center h-24 bg-[#ffb500] rounded-b-2xl shadow-xl px-8'>
             {/* User Info */}
             <div>
                 <div className='size-[50px] rounded-full'>
@@ -18,7 +18,7 @@ const TopBanner = () => {
 
             {/* view Balance   */}
             <div >
-                <p className='flex items-center gap-3 bg-white px-8 py-2 text-[#e2126d] text-xl rounded-full'>
+                <p className='flex items-center gap-3 bg-white px-8 py-2 text-[#ffb500] text-xl rounded-full'>
                     <TbCoinTakaFilled  className='text-2xl'/> 0.00
                 </p>
             </div>
