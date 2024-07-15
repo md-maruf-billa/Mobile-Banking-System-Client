@@ -17,7 +17,9 @@ const Home = () => {
             </div>
 
 
-            <div className='absolute w-full bottom-0'>
+
+
+            <div className='fixed w-full bottom-0'>
                 <AppFooter />
             </div>
         </div>

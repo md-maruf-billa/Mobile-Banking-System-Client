@@ -12,20 +12,20 @@ const OurServices = () => {
             <div className='flex justify-between items-center  mt-16'>
 
 
-                <Link className='flex flex-col justify-center items-center gap-2 border rounded-full size-28'>
-                    <SlPresent className='text-3xl md:text-5xl' />
+                <Link to="/send-money" className='flex flex-col justify-center items-center gap-2 border rounded-full size-24'>
+                    <SlPresent className='text-3xl md:text-4xl' />
                     <span className='text-sm text-gray-600'>Send Mony</span>
                 </Link>
 
 
-                <Link className='flex flex-col justify-center items-center gap-2 border rounded-full size-28'>
-                    <MdOutlineSendToMobile className='text-3xl md:text-5xl' />
+                <Link to="/cash-out" className='flex flex-col justify-center items-center gap-2 border rounded-full size-24'>
+                    <MdOutlineSendToMobile className='text-3xl md:text-4xl' />
                     <span className='text-sm text-gray-600'>Cash Out</span>
                 </Link>
 
 
-                <Link className='flex flex-col justify-center items-center gap-2 border rounded-full size-28'>
-                    <MdAddCard className='text-3xl md:text-5xl' />
+                <Link className='flex flex-col justify-center items-center gap-2 border rounded-full size-24'>
+                    <MdAddCard className='text-3xl md:text-4xl' />
                     <span className='text-sm text-gray-600'>Cash In</span>
                 </Link>
 

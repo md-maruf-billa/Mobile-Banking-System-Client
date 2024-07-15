@@ -4,6 +4,8 @@ import Layout from './Layout';
 import Home from '../Pages/Home/Home';
 import Welcome from '../Pages/Welcome/Welcome';
 import Register from '../Pages/Register/Register';
+import SendMoney from '../Pages/SendMoney/SendMoney';
+import CashOut from '../Pages/CashOut/CashOut';
 
 
 
@@ -23,6 +25,14 @@ const Router = createBrowserRouter([
             {
                 path:"/register",
                 element:<Register/>
+            },
+            {
+                path:"/send-money",
+                element:<SendMoney/>
+            },
+            {
+                path:"/cash-out",
+                element:<CashOut/>
             }
         ]
     }
