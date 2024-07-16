@@ -8,6 +8,7 @@ import SendMoney from '../Pages/SendMoney/SendMoney';
 import CashOut from '../Pages/CashOut/CashOut';
 import CashIn from '../Pages/CashIn/CashIn';
 import Trans from '../Pages/Trans/Trans';
+import SecureRoute from '../Utils/Secure/SecureRoute';
 
 
 
@@ -21,28 +22,28 @@ const Router = createBrowserRouter([
                 element: <Welcome />
             },
             {
-                path:"/home",
-                element:<Home/>
+                path: "/home",
+                element: <SecureRoute><Home /></SecureRoute>
             },
             {
-                path:"/register",
-                element:<Register/>
+                path: "/register",
+                element: <SecureRoute><Register /></SecureRoute>
             },
             {
-                path:"/send-money",
-                element:<SendMoney/>
+                path: "/send-money",
+                element: <SecureRoute> <SendMoney /></SecureRoute>
             },
             {
-                path:"/cash-out",
-                element:<CashOut/>
+                path: "/cash-out",
+                element: <SecureRoute><CashOut /></SecureRoute>
             },
             {
-                path:"/cash-in",
-                element:<CashIn/>
+                path: "/cash-in",
+                element: <SecureRoute><CashIn /></SecureRoute>
             },
             {
-                path:"/transaction",
-                element:<Trans/>
+                path: "/transaction",
+                element: <SecureRoute><Trans /></SecureRoute>
             }
         ]
     }
