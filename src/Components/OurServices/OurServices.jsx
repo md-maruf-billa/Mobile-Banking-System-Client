@@ -24,7 +24,7 @@ const OurServices = () => {
                 </Link>
 
 
-                <Link className='flex flex-col justify-center items-center gap-2 border rounded-full size-24'>
+                <Link to="/cash-in" className='flex flex-col justify-center items-center gap-2 border rounded-full size-24'>
                     <MdAddCard className='text-3xl md:text-4xl' />
                     <span className='text-sm text-gray-600'>Cash In</span>
                 </Link>

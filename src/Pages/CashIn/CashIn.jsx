@@ -2,7 +2,7 @@ import React from 'react';
 import AppFooter from '../../Components/AppFooter/AppFooter';
 import TopBanner from '../../Components/TopBanner/TopBanner';
 
-const CashOut = () => {
+const CashIn = () => {
     return (
         <div className=''>
             <TopBanner />
@@ -14,14 +14,14 @@ const CashOut = () => {
 
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
-                        <span className="label-text">Agent Number or Email</span>
+                        <span className="label-text">Your Agent email or phone</span>
                     </div>
                     <input type="text" placeholder="Email or Phone" className="input input-bordered w-full max-w-xs" />
 
                 </label>
                 <label className="form-control w-full max-w-xs">
                     <div className="label">
-                        <span className="label-text">Amounts</span>
+                        <span className="label-text">Requested Amounts</span>
                     </div>
                     <input type="text" placeholder="Min 10 Tka" className="input input-bordered w-full max-w-xs" />
 
@@ -44,7 +44,7 @@ const CashOut = () => {
                 </label>
 
                 <button className='btn bg-[#ffb500] max-w-xs w-full'>
-                    Cash Out Now
+                    Send cash In Request
                 </button>
             </div>
 
@@ -58,4 +58,4 @@ const CashOut = () => {
     );
 };
 
-export default CashOut;
+export default CashIn;

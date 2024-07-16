@@ -12,7 +12,7 @@ const AppFooter = () => {
             </Link>
 
 
-            <Link className='flex flex-col items-center'>
+            <Link to="/transaction" className='flex flex-col items-center'>
                 <MdOutlineMail className='text-5xl' />
                 <span className=' text-sm'>Transactions</span>
             </Link>

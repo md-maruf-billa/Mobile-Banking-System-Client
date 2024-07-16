@@ -6,6 +6,8 @@ import Welcome from '../Pages/Welcome/Welcome';
 import Register from '../Pages/Register/Register';
 import SendMoney from '../Pages/SendMoney/SendMoney';
 import CashOut from '../Pages/CashOut/CashOut';
+import CashIn from '../Pages/CashIn/CashIn';
+import Trans from '../Pages/Trans/Trans';
 
 
 
@@ -33,6 +35,14 @@ const Router = createBrowserRouter([
             {
                 path:"/cash-out",
                 element:<CashOut/>
+            },
+            {
+                path:"/cash-in",
+                element:<CashIn/>
+            },
+            {
+                path:"/transaction",
+                element:<Trans/>
             }
         ]
     }

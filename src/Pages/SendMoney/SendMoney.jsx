@@ -44,7 +44,7 @@ const SendMoney = () => {
                 </label>
 
                 <button className='btn bg-[#ffb500] max-w-xs w-full'>
-                    Sent Now
+                    Send Money
                 </button>
             </div>
 
