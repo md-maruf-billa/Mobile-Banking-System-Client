@@ -4,7 +4,7 @@ import useAxiosLocal from '../../Utils/Hooks/AxiosLocal';
 import Swal from 'sweetalert2';
 
 const Welcome = () => {
-    const navigate = useNavigate();    
+    const navigate = useNavigate();
     const axiosLocal = useAxiosLocal();
     const [errorMessage, setErrorMessage] = useState();
 
@@ -23,14 +23,23 @@ const Welcome = () => {
                     setErrorMessage(data.data.message)
                 }
                 else {
-                    localStorage.setItem("currentStatus","login")
+                    localStorage.setItem("currentStatus", "login")
                     setErrorMessage("");
                     Swal.fire({
                         title: "Successfully",
                         text: "You are successfully logedIn",
                         icon: "success"
                     });
-                    navigate("/home")
+                    if (data.data.accountType == "User") {
+
+                        navigate("/home")
+                    }
+                    else if(data.data.accountType == "Agent"){
+
+                    }
+                    else if(data.data.accountType == "Admin"){
+                        navigate("/admin-home")
+                    }
                 }
             })
 

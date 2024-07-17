@@ -9,6 +9,7 @@ import CashOut from '../Pages/CashOut/CashOut';
 import CashIn from '../Pages/CashIn/CashIn';
 import Trans from '../Pages/Trans/Trans';
 import SecureRoute from '../Utils/Secure/SecureRoute';
+import AdminHome from '../Pages/Admin/AdminHome/AdminHome';
 
 
 
@@ -27,7 +28,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/register",
-                element: <SecureRoute><Register /></SecureRoute>
+                element: <Register />
             },
             {
                 path: "/send-money",
@@ -44,6 +45,10 @@ const Router = createBrowserRouter([
             {
                 path: "/transaction",
                 element: <SecureRoute><Trans /></SecureRoute>
+            },
+            {
+                path:"/admin-home",
+                element:<AdminHome/>
             }
         ]
     }
